@@ -1,0 +1,29 @@
+                if (TxtCliente.getText().isEmpty()) {
+                     JOptionPane.showMessageDialog(null, "Favor informar o nome do cliente !!!");
+                     TxtCliente.requestFocus();
+                     return;   
+                }                
+            
+               try{
+                   num1 = Float.parseFloat(TxtNum1.getText());
+               } catch (NumberFormatException e) {
+                  JOptionPane.showMessageDialog(null, "Favor informar um valor de compra válido !!!");
+                  TxtNum1.requestFocus();
+                  return;
+               }
+               
+               try{
+                   num2 = Float.parseFloat(TxtNum2.getText());
+               } catch (NumberFormatException e) {
+                  JOptionPane.showMessageDialog(null, "Favor informar um valor de acréscimo válido !!!");
+                  TxtNum2.requestFocus();
+                  return;
+               }
+           
+               try{
+                   num3 = Integer.parseInt(TxtNum3.getText());
+               } catch (NumberFormatException e) {
+                  JOptionPane.showMessageDialog(null, "Favor informar uma quantidade de parcelas válida !!!");
+                  TxtNum3.requestFocus();
+                  return;
+               }    
